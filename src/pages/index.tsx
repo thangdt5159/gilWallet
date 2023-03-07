@@ -12,7 +12,7 @@ export default function Home() {
 
   return (
     <main
-      className={`relative placeholder:font-inter text-white ${
+      className={`relative font-inter text-white ${
         toggle && "h-screen overflow-hidden"
       }`}
     >

@@ -126,7 +126,7 @@ const Navbar = ({ toggle, setToggle }: any) => {
       </nav>
 
       {/* desktop */}
-      <nav className="py-[2px] px-[1.5rem] w-full mt-4 hidden md:block absolute bg-transparent">
+      <nav className="py-[2px] px-[1.5rem] w-full mt-4 hidden md:block absolute bg-transparent z-10">
         <div className="flex justify-between items-center md:max-w-[1400px] mx-auto">
           <div className="font-extrabold text-[28px] cursor-pointer">LOGO</div>
           <div className="flex items-center justify-between ml-8 pl-4 text-[15px]">
@@ -152,7 +152,12 @@ const Navbar = ({ toggle, setToggle }: any) => {
         }`}
       >
         <div className="flex justify-between items-center md:max-w-[1400px] mx-auto">
-          <div className="font-extrabold text-[24px]  cursor-pointer">LOGO</div>
+          <div
+            className="font-extrabold text-[24px]  cursor-pointer"
+            onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+          >
+            LOGO
+          </div>
           <div className="flex items-center justify-between ml-8 pl-4 text-[14px]">
             {data.map((item) => (
               <div

@@ -8,19 +8,19 @@ const Footer = () => {
     },
     {
       id: 2,
-      title: "About Us",
+      title: "Dex",
     },
     {
       id: 3,
-      title: "Our Team",
+      title: "Launchpad",
     },
     {
       id: 4,
-      title: "Shop",
+      title: "Marketplace",
     },
     {
       id: 5,
-      title: "Blog",
+      title: "Docs",
     },
     {
       id: 6,
@@ -37,8 +37,7 @@ const Footer = () => {
             <div className="md:w-1/3 px-8 pb-8">
               <h3 className="text-[30px] mb-[15px] font-bold">LOGO</h3>
               <p className="text-[15px] mb-4 tracking-[-0.009em]">
-                Reinventing the way of creating websites, we aim to create the
-                most master-peaced WordPress theme available on the market.
+                Store and manage your crypto assets with ease and security.
               </p>
             </div>
 
@@ -87,13 +86,13 @@ const Footer = () => {
         </div>
         <div className="max-w-[690px] md:max-w-none flex flex-col-reverse md:flex-row justify-between text-[13px]">
           <p className="mb-4 text-[#9097aa] tracking-[-0.0025em] text-center md:text-start">
-            Copyright ©2023 Toka. All rights reserved.
+            Copyright ©2023 SenSui. All rights reserved.
           </p>
           <ul className="mb-4 flex flex-wrap justify-center md:justify-between">
             {data.map((item) => (
               <li
                 key={item.id}
-                className="pr-4 md:px-4 leading-[1.7rem] tracking-[-0.0025em]"
+                className="pr-4 md:px-4 leading-[1.7rem] tracking-[-0.0025em] cursor-pointer"
               >
                 {item.title}
               </li>
