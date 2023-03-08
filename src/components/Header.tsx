@@ -11,27 +11,32 @@ const Header = () => {
       <div className="absolute w-full h-full bg-gradientBg bg-no-repeat [background-size:55%] [background-position:100%_50%]"></div>
       <div className="md:pt-[180px]">
         <div className="relative md:max-w-[1440px] mx-auto flex items-center">
-          {/* <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="250.5"
-          height="250.5"
-          viewBox="0 0 250.5 250.5"
-          className="absolute"
-        >
-          <path
-            d="M.25,125.25a125,125,0,1,1,125,125,125,125,0,0,1-125-125"
-            id="e-path-8e3fa3e"
-          ></path>
-          <text>
-            <textPath
-              id="e-text-path-8e3fa3e"
-              href="#e-path-8e3fa3e"
-              startOffset="0%"
+          <div className="absolute uppercase w-[100px] h-[100px] bg-star [background-size:25%] bg-no-repeat bg-center animate-spin top-0 left-1/2">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="100"
+              height="100"
+              viewBox="0 0 250.5 250.5"
+              overflow="visible"
             >
-              Sensui Wallet -
-            </textPath>
-          </text>
-        </svg> */}
+              <path
+                d="M.25,125.25a125,125,0,1,1,125,125,125,125,0,0,1-125-125"
+                id="e-path"
+                fill="transparent"
+              ></path>
+              <text>
+                <textPath
+                  id="e-text-path"
+                  href="#e-path"
+                  startOffset="0%"
+                  fill="#fff"
+                  className="text-[28px] [word-spacing:50px]"
+                >
+                  Sensui Wallet - Sensui Wallet -
+                </textPath>
+              </text>
+            </svg>
+          </div>
           <div className="md:w-1/2">
             <div className="mr-[10%] ml-[20%]">
               <h4 className="bg-[#1a1a1a] w-fit mb-[15px] px-[15px] py-2 rounded-full text-lightGray text-[14px] font-semibold leading-[1.3em] tracking-[1px]">
@@ -48,7 +53,7 @@ const Header = () => {
                 <Image
                   src={chPlay1}
                   alt=""
-                  className="w- cursor-pointer"
+                  className="cursor-pointer"
                   onClick={() =>
                     window.open(
                       "https://play.google.com/store/apps/details?id=com.gilwallet"
@@ -58,13 +63,13 @@ const Header = () => {
                 <Image
                   src={appStore}
                   alt=""
-                  className="w- cursor-pointer"
+                  className="cursor-pointer"
                   title="Coming soon"
                 />
                 <Image
                   src={chPlay2}
                   alt=""
-                  className="w- cursor-pointer"
+                  className="cursor-pointer"
                   onClick={() =>
                     window.open(
                       "https://chrome.google.com/webstore/detail/sensui-wallet/ebaeifdbcjklcmoigppnpkcghndhpbbm"

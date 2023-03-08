@@ -5,6 +5,7 @@ import trade from "../../public/images/nft-details.png";
 import chPlay1 from "../../public/images/header/ch-play-1.png";
 import chPlay2 from "../../public/images/header/ch-play-2.png";
 import appStore from "../../public/images/header/app-store.png";
+import phone2 from "../../public/images/phone-2.png";
 
 const WhyUs = () => {
   const data1 = [
@@ -30,22 +31,27 @@ const WhyUs = () => {
     {
       id: 1,
       image: "/images/whyUs/token-5.png",
+      title: "",
     },
     {
       id: 2,
       image: "/images/whyUs/token-6.png",
+      title: "",
     },
     {
       id: 3,
       image: "/images/whyUs/token-gil.png",
+      title: "GIL",
     },
     {
       id: 4,
       image: "/images/whyUs/token-7.png",
+      title: "",
     },
     {
       id: 5,
       image: "/images/whyUs/token-8.png",
+      title: "",
     },
   ];
 
@@ -53,22 +59,27 @@ const WhyUs = () => {
     {
       id: 1,
       image: "/images/whyUs/token-9.png",
+      title: "",
     },
     {
       id: 2,
       image: "/images/whyUs/token-10.png",
+      title: "",
     },
     {
       id: 3,
       image: "/images/whyUs/token-sui.png",
+      title: "SUI",
     },
     {
       id: 4,
       image: "/images/whyUs/token-11.png",
+      title: "",
     },
     {
       id: 5,
       image: "/images/whyUs/token-12.png",
+      title: "",
     },
   ];
 
@@ -104,19 +115,19 @@ const WhyUs = () => {
 
     Object.keys(img1.children).forEach((element: any) => {
       img1.children[element].style.animationDuration =
-        Math.floor(Math.random() * 5 + 4) + "s";
+        Math.floor(Math.random() * 5 + 5) + "s";
     });
     Object.keys(img2.children).forEach((element: any) => {
       img2.children[element].style.animationDuration =
-        Math.floor(Math.random() * 5 + 3) + "s";
+        Math.floor(Math.random() * 5 + 4) + "s";
     });
     Object.keys(img3.children).forEach((element: any) => {
       img3.children[element].style.animationDuration =
-        Math.floor(Math.random() * 5 + 5) + "s";
+        Math.floor(Math.random() * 5 + 6) + "s";
     });
     Object.keys(img4.children).forEach((element: any) => {
       img4.children[element].style.animationDuration =
-        Math.floor(Math.random() * 5 + 6) + "s";
+        Math.floor(Math.random() * 5 + 7) + "s";
     });
   }, []);
 
@@ -127,7 +138,14 @@ const WhyUs = () => {
       <div className="md:py-[100px]">
         <div className="md:max-w-[1140px] mx-auto">
           <div className="flex items-center justify-between">
-            <div className="md:w-1/2 md:flex p-[10px]">
+            <Image
+              src={phone2}
+              alt=""
+              width={600}
+              height={600}
+              className="scale-90"
+            />
+            {/* <div className="md:w-1/2 md:flex p-[10px]">
               <Image
                 src={swap}
                 alt=""
@@ -142,7 +160,7 @@ const WhyUs = () => {
                 height={600}
                 className="w-1/2 ml-[-40px] [transform:perspective(9cm)_rotateX(7deg)_rotateZ(15deg)_rotateY(-25deg)_scale(0.6)_translateY(-200px)]"
               />
-            </div>
+            </div> */}
             <div className="md:w-1/2 ml-[60px] p-[10px]">
               <h4 className="uppercase w-fit bg-[#124EE852] text-darkBlue text-[14px] font-semibold leading-[1.3em] tracking-[1px] mb-[15px] py-2 px-[15px] rounded-full">
                 MORE POSSIBILITIES
@@ -154,7 +172,7 @@ const WhyUs = () => {
                 Say goodbye to the hassle of managing multiple accounts, and
                 hello to easy and secure transactions
               </p>
-              <div className="flex justify-center gap-5 items-center mb-[100px]">
+              <div className="flex justify-center gap-5 items-center mt-10">
                 <Image
                   src={chPlay1}
                   alt=""
@@ -184,7 +202,7 @@ const WhyUs = () => {
               </div>
             </div>
           </div>
-          <div className="flex items-center justify-between mt-[100px]">
+          <div className="flex items-center justify-between mt-10">
             <div className="md:w-1/2">
               <h4 className="uppercase w-fit text-darkPink text-[14px] font-semibold leading-[1.3em] tracking-[1px] bg-[#BC35BC47] mb-[15px] py-2 px-[15px] rounded-full">
                 Why sensui wallet
@@ -224,6 +242,7 @@ const WhyUs = () => {
                     width={100}
                     height={100}
                     className={`animate-blink mx-[5px] rounded-full`}
+                    title={item.title}
                   />
                 ))}
               </div>
@@ -236,6 +255,7 @@ const WhyUs = () => {
                     width={100}
                     height={100}
                     className={`animate-blink mx-[5px] rounded-full`}
+                    title={item.title}
                   />
                 ))}
               </div>

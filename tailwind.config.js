@@ -24,11 +24,16 @@ module.exports = {
         "0%": { transform: "rotate(0)" },
         "100%": { transform: "rotate(30deg)" },
       },
+      spin: {
+        from: { transform: "rotate(0)" },
+        to: { transform: "rotate(360deg)" },
+      },
     },
     animation: {
       blink: "blink 5s ease infinite",
       bounce: "bounce 4s ease infinite",
       slide: "slide 5s ease",
+      spin: "spin 10s linear infinite",
     },
     fontFamily: {
       inter: ["Inter", "sans-serif"],
@@ -36,6 +41,7 @@ module.exports = {
     extend: {
       backgroundImage: {
         gradientBg: 'url("/images/gradient-bg.png")',
+        star: 'url("/images/star.png")',
       },
       backgroundColor: {
         titleBlack: "#020710",
