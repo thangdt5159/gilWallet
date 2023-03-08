@@ -29,7 +29,7 @@ const Footer = () => {
   ];
 
   return (
-    <section className="md:bg-gradient-to-r from-[#141d21] via-[#070d16] to-[#0c1225] font-inter">
+    <section className="bg-gradient-to-r from-[#141d21] via-[#070d16] to-[#0c1225] font-inter">
       <div className="max-w-[1366px] mx-auto pt-[2rem] pb-[0.5rem] px-8 md:px-[15px]">
         <div className="mt-4 md:mt-[3rem] mb-[1.5rem] pb-[0.5rem] border-b border-[#ffffff12]">
           <div className="-mx-8 md:flex justify-between">

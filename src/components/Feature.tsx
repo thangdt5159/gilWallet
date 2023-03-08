@@ -39,26 +39,29 @@ const Feature = () => {
   return (
     <section className="bg-titleBlack relative">
       <div className="absolute w-full h-full bg-gradientBg bg-no-repeat bg-cover [background-position:50%_40%]"></div>
-      <div className="md:py-[120px]">
+      <div className="md:py-[120px] py-[60px] px-5 md:px-0">
         <div className="md:max-w-[1140px] mx-auto relative z-10">
           <div className="md:pb-10 md:max-w-[560px] mx-auto text-center">
             <h4 className="uppercase bg-[#1a1a1a] mx-auto w-fit mb-[15px] px-[15px] py-2 rounded-full text-lightGray text-[14px] font-semibold leading-[1.3em] tracking-[1px]">
               Sensui Wallet
             </h4>
-            <h1 className="text-[44px] font-semibold leading-[1.3em] tracking-[-0.8px] pb-5">
+            <h1 className="text-[32px] md:text-[44px] font-semibold leading-[1.3em] tracking-[-0.8px] pb-5">
               The ultimate cryptocurrency solution
             </h1>
-            <p className="text-darkGray text-[18px] leading-[1.7em]">
+            <p className="text-lightGray md:text-[18px] leading-[1.7em] pb-5 md:pb-0">
               Experience lightning-fast transactions and rock-solid security
             </p>
           </div>
-          <div className="md:p-[60px] [background-image:radial-gradient(at_top_left,#1A1A1A85_0%,#1A1A1ACF_100%)] grid grid-cols-3 gap-y-5 rounded-[20px]">
+          <div className="md:p-[60px] [background-image:radial-gradient(at_top_left,#1A1A1A85_0%,#1A1A1ACF_100%)] md:grid grid-cols-3 gap-y-5 rounded-[20px] py-10 md:py-0">
             {data.map((item) => (
-              <div key={item.id} className=" flex p-5">
+              <div
+                key={item.id}
+                className="md:flex p-5 text-center md:text-start"
+              >
                 <Image
                   src={purpleDot}
                   alt=""
-                  className="w-[29px] h-[29px] mr-[30px]"
+                  className="w-[14%] md:w-[29px] md:h-[29px] md:mr-[30px] mx-auto"
                 />
                 <div>
                   <h4 className="text-[22px] font-bold leading-[1.7em]">
