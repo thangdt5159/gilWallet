@@ -39,22 +39,20 @@ module.exports = {
       inter: ["Inter", "sans-serif"],
     },
     extend: {
-      backgroundImage: {
-        gradientBg: 'url("/images/gradient-bg.png")',
-        star: 'url("/images/star.png")',
-      },
-      backgroundColor: {
-        titleBlack: "#020710",
-      },
-      textColor: {
+      colors: {
         lightGreen: "#2CBCA5",
         lightGray: "#a2a3a2",
         darkGray: "#4f4f4f",
         titleBlack: "#020710",
         darkBlue: "#124ee8",
         darkPink: "#bc35bc",
+        white: "#fff",
+        black: "#000",
       },
-      border: {},
+      backgroundImage: {
+        gradientBg: 'url("/images/gradient-bg.png")',
+        star: 'url("/images/star.png")',
+      },
     },
   },
   plugins: [],

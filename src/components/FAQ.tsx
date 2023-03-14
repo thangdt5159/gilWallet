@@ -11,7 +11,7 @@ const FAQ = () => {
               Your go-to crypto solution
             </h1>
             <p className="text-lightGray md:text-[18px] leading-[1.7em] mb-5">
-              Whether you're a seasoned crypto investor or just getting started,
+              Whether you&apos;re a seasoned crypto investor or just getting started,
               Sensui Wallet has everything you need to manage your digital
               assets with ease
             </p>
